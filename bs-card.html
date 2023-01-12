@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="Hello.css">
+  </head>
+    <body style="background-color: rgb(203, 231, 232);">
+        <div class="head">
+            <nav class="navbar fixed-top navbar-expand-lg" style="background-color:white; padding: 0;">
+             <img src="data:image/jpeg;base64,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" style="height: 60px;"/>
+                <div class="container-fluid">
+                  <a class="navbar-brand text-dark" href="#">NISSAN</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent;">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active text-dark" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">details</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          More
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">something here</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled text-dark">Disabled</a>
+                      </li>
+                    </ul>
+                    
+                    
+                  
+                  </div>
+                </div>
+                
+                
+              </nav>
+              
+
+              <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://c4.wallpaperflare.com/wallpaper/513/387/604/nissan-skyline-nissan-skyline-gt-r-r34-gt-r-wallpaper-preview.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmSfD1Fwjpm54Z3CUVp_Psrlp-GbimE325EQ&usqp=CAU" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://c4.wallpaperflare.com/wallpaper/513/387/604/nissan-skyline-nissan-skyline-gt-r-r34-gt-r-wallpaper-preview.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+
+
+      <div class="container" style="margin-top: 100px; display: flex;">
+        <div class="card" style="width: 18rem;">
+            <img src="https://c4.wallpaperflare.com/wallpaper/513/387/604/nissan-skyline-nissan-skyline-gt-r-r34-gt-r-wallpaper-preview.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Nissan GTR</h5>
+              <p class="card-text">skyline </p>
+              <a href="https://www.wallpaperflare.com/blue-nissan-gtr-coupe-skyline-nissan-skyline-gt-r-r34-jdm-wallpaper-toblh" class="btn btn-success"> click to view</a>
+            </div>
+          </div> 
+
+
+          <div class="card" style="width: 18rem; margin-left: 50px;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmSfD1Fwjpm54Z3CUVp_Psrlp-GbimE325EQ&usqp=CAU" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">supra</h5>
+              <p class="card-text">1998 MKV</p>
+              <a href="https://blog.dupontregistry.com/specs/1998-toyota-supra-price-specs-photos-review/" class="btn btn-success">click to view</a>
+            </div>
+          </div>
+
+
+          <div class="card" style="width: 18rem; margin-left: 50px;">
+            <img src="https://c4.wallpaperflare.com/wallpaper/513/387/604/nissan-skyline-nissan-skyline-gt-r-r34-gt-r-wallpaper-preview.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Nissan GTR</h5>
+              <p class="card-text">skyline</p>
+              <a href="https://www.wallpaperflare.com/blue-nissan-gtr-coupe-skyline-nissan-skyline-gt-r-r34-jdm-wallpaper-toblh" class="btn btn-success">click to view</a>
+            </div>
+          </div>
+
+
+          <div class="card" style="width: 18rem; margin-left: 50px;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmSfD1Fwjpm54Z3CUVp_Psrlp-GbimE325EQ&usqp=CAU" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">supra</h5>
+              <p class="card-text">1998 MKV</p>
+              <a href="https://blog.dupontregistry.com/specs/1998-toyota-supra-price-specs-photos-review/" class="btn btn-success">click to view</a>
+            </div>
+          </div>
+      </div>
+
+
+      <div class="container" style="margin-top:50px; display: flex;">
+        <div class="card" style="width: 18rem; margin-left: 0px;">
+          <img src="https://c4.wallpaperflare.com/wallpaper/513/387/604/nissan-skyline-nissan-skyline-gt-r-r34-gt-r-wallpaper-preview.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Nissan GTR</h5>
+            <p class="card-text">skyline</p>
+            <a href="#" class="btn btn-success">click to view</a>
+          </div>
+        </div>
+
+
+        <div class="card" style="width: 18rem; margin-left: 50px;">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmSfD1Fwjpm54Z3CUVp_Psrlp-GbimE325EQ&usqp=CAU" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">supra</h5>
+            <p class="card-text">1998 MKV</p>
+            <a href="#" class="btn btn-success">CLICK TO VIEW</a>
+          </div>
+        </div>
+
+
+        <div class="card" style="width: 18rem; margin-left: 50px;">
+          <img src="https://c4.wallpaperflare.com/wallpaper/513/387/604/nissan-skyline-nissan-skyline-gt-r-r34-gt-r-wallpaper-preview.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Nissan GTR</h5>
+            <p class="card-text">skyline</p>
+            <a href="#" class="btn btn-success">click to view</a>
+          </div>
+        </div>
+
+
+        <div class="card" style="width: 18rem; margin-left: 50px;">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmSfD1Fwjpm54Z3CUVp_Psrlp-GbimE325EQ&usqp=CAU" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">supra</h5>
+            <p class="card-text">1998 MKV</p>
+            <a href="#" class="btn btn-success">click to view</a>
+          </div>
+        </div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+      <form class="d-flex"  role="search">
+                    
+        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">login
+        </button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h1 class="modal-title fs-5" id="exampleModalLabel">login form</h1>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+
+<div class="modal-body">
+</div>
+<table>
+<label for="">username</label>
+<input type="text" id="username" name="username"><br>
+
+<label for="">password</label>
+<input type="text" id="password" name="password" placeholder="enter password">
+
+</table>
+
+<div class="modal-footer">
+<button type="button" class="btn btn-success" data-bs-dismiss="modal">login</button>
+<button type="button" class="btn btn-primary">Save changes</button>
+</div>
+</div>
+</div>
+</div>
+      </form>
+    </body>
+</html>
